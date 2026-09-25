@@ -9,9 +9,9 @@ void setup() {
 }
 
 void loop() {
- digitalWrite(pumpPin, LOW); //Turning the relay off
+ digitalWrite(pumpPin, HIGH); //Turning the relay off
  delay(10000); //Waiting for 10 Seconds
- digitalWrite(pumpPin, HIGH); //Turning the relay on
+ digitalWrite(pumpPin, LOW); //Turning the relay on
  delay(20000); //Waiting for 20 Seconds
 }
 
