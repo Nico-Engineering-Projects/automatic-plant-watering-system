@@ -14,7 +14,7 @@
 
 Copy the following structure for each small stage and fill it in after doing the work:
 
-- Date and phase:
+- Date and phase: 2026/09/25
 - Goal:
 - Hardware or wiring changes:
 - Software changes:
