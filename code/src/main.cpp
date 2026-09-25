@@ -1,6 +1,7 @@
 #include <Arduino.h>
+#include 
 #define pumpPin 14 //Defining the relay pin for future use
-#define temphPin 35
+
 // put function declarations here:
 
 
@@ -11,8 +12,8 @@ void setup() {
 
 void loop() {
  digitalWrite(pumpPin, HIGH); //Turning the relay off
- delay(10000); //Waiting for 10 Seconds
+ delay(5000); //Waiting for 10 Seconds
  digitalWrite(pumpPin, LOW); //Turning the relay on
- delay(20000); //Waiting for 20 Seconds
+ delay(10000); //Waiting for 20 Seconds
 }
 
