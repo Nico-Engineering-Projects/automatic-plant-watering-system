@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #define pumpPin 14 //Defining the relay pin for future use
+#define temphPin 35
 // put function declarations here:
 
 
