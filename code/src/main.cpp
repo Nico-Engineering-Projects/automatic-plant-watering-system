@@ -1,18 +1,17 @@
 #include <Arduino.h>
-
+#define pumpPin 14 //Defining the relay pin for future use
 // put function declarations here:
-int myFunction(int, int);
+
 
 void setup() {
   // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+ pinMode(pumpPin, OUTPUT);//Setting the relay pin as output
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+ digitalWrite(pumpPin, LOW); //Turning the relay off
+ delay(10000); //Waiting for 10 Seconds
+ digitalWrite(pumpPin, HIGH); //Turning the relay on
+ delay(20000); //Waiting for 20 Seconds
 }
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}

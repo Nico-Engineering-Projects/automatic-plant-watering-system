@@ -14,14 +14,14 @@
 
 Copy the following structure for each small stage and fill it in after doing the work:
 
-- Date and phase: 2026/09/25
-- Goal:
-- Hardware or wiring changes:
+- Date and phase: 2026/09/25 (Phase1)
+- Goal: Check if the ESP32 is working and checking if relay system is working
+- Hardware or wiring changes: 
 - Software changes:
-- Test method:
-- Expected result:
+- Test method: Run pump for 20 seconds through the relay
+- Expected result: Pump ran successfully through the relay
 - Observed result:
 - Measurements, photographs or screenshots:
 - Problems and decisions:
-- GitHub commit or release link:
+- GitHub commit or release link: 
 - Next step:
