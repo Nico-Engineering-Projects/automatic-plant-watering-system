@@ -16,12 +16,12 @@ Copy the following structure for each small stage and fill it in after doing the
 
 - Date and phase: 2026/09/25 (Phase1)
 - Goal: Check if the ESP32 is working and checking if relay system is working
-- Hardware or wiring changes: 
-- Software changes:
+- Hardware or wiring changes: No changes made 
+- Software changes: Initialised the platform.io ide 
 - Test method: Run pump for 20 seconds through the relay
 - Expected result: Pump ran successfully through the relay
-- Observed result:
+- Observed result: Pump ran for 20 seconds but is way to strong so would try with a smaller battery next time
 - Measurements, photographs or screenshots:
-- Problems and decisions:
+- Problems and decisions: To much voltage causing pump to pump to much water at a time
 - GitHub commit or release link: 
-- Next step:
+- Next step: Soil controll
