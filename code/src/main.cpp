@@ -10,9 +10,9 @@
 // PINS
 // =====================================================
 
-#define pumpPin 14
-#define tempSensorPin 13
-#define moistureSensorPin 15
+#define pumpPin 13
+#define tempSensorPin 15
+#define moistureSensorPin 2
 
 
 // =====================================================
