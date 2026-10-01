@@ -1,15 +1,20 @@
 #include <Arduino.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
+#include <Adafruit_Sensor.h>
+#include <DHT.h>
 
 #define pumpPin 14 //Defining the relay pin for future use
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
+#define tempSensorPin 13 //Defining the pin for the temperature and humidity sensor
+#define DHTTYPE DHT11 //Defining the type of the temperature and humidity sensor
 int temp = 0;
 int humidity = 0;
 int soilMoisture = 0;
 
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+DHT dht(tempSensorPin, DHTTYPE); //Defining the temperature and humidity sensor
 // put function declarations here:
 
 
@@ -17,6 +22,7 @@ void setup() {
   // put your setup code here, to run once:
  pinMode(pumpPin, OUTPUT);//Setting the relay pin as output
  digitalWrite(pumpPin, HIGH); //Turning the relay off
+ dht.begin(); //Initializing the temperature and humidity sensor
  //Setting up the OLED display
 display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
 display.clearDisplay();
@@ -31,6 +37,8 @@ delay(3000); //Waiting for 2 Seconds
 
 void data()
 {
+temp = dht.readTemperature(); //Reading the temperature and humidity sensor pin
+humidity = dht.readHumidity(); //Reading the temperature and humidity sensor pin
 display.setCursor(0,0);
 display.println("Soil Moisture: " + String(soilMoisture) + "%");
 display.setCursor(0,10);
