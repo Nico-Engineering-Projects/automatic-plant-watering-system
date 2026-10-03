@@ -12,7 +12,7 @@
 
 #define pumpPin 13
 #define tempSensorPin 15
-#define moistureSensorPin 2
+#define moistureSensorPin 12
 
 
 // =====================================================
