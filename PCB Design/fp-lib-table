@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "New Footprint") (type "KiCad") (uri "${KIPRJMOD}/New Footprint.pretty") (options "") (descr ""))
+	(lib (name "PCB Design") (type "KiCad") (uri "${KIPRJMOD}/New Footprint.pretty/PCB Design.pretty") (options "") (descr ""))
+)
