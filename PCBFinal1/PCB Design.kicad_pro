@@ -540,7 +540,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Gerbers/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -652,6 +652,14 @@
     "meta": {
       "version": 1
     },
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -664,7 +672,7 @@
         "uuid": "c32e7999-7ae2-410b-8b0f-95785989813f"
       }
     ],
-    "used_designators": "U1-2,J2-5",
+    "used_designators": "U1",
     "variants": []
   },
   "sheets": [

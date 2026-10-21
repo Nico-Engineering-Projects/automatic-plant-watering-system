@@ -12,7 +12,7 @@
 
 #define pumpPin 13
 #define tempSensorPin 15
-#define moistureSensorPin 12
+#define moistureSensorPin 34
 
 
 // =====================================================
@@ -35,14 +35,14 @@
 // =====================================================
 
 #define drySoil 3155
-#define wetSoil 1540
+#define wetSoil 1550
 
 
 // =====================================================
 // WATERING SETTINGS
 // =====================================================
 
-#define DRY_LEVEL 5
+#define DRY_LEVEL 35
 #define WET_LEVEL 80
 
 
