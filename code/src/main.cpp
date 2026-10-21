@@ -34,15 +34,15 @@
 // SOIL CALIBRATION
 // =====================================================
 
-#define drySoil 3155
-#define wetSoil 1550
+#define drySoil 1920
+#define wetSoil 960
 
 
 // =====================================================
 // WATERING SETTINGS
 // =====================================================
 
-#define DRY_LEVEL 35
+#define DRY_LEVEL 5
 #define WET_LEVEL 80
 
 
@@ -50,11 +50,11 @@
 // TIME CONSTANTS
 // =====================================================
 
-// Pump runs for 5 seconds
-const unsigned long pumpRunTime = 5000UL;
+// Pump runs for 1 second
+const unsigned long pumpRunTime = 1000UL;
 
-// Allow water to soak for 5 minutes
-const unsigned long soakTime = 300000UL;
+// Allow water to soak for 10 seconds
+const unsigned long soakTime = 10000UL;
 
 // Read sensors every 2 seconds
 const unsigned long checkInterval = 2000UL;
@@ -352,7 +352,7 @@ void setup()
 void loop()
 {
     unsigned long currentTime = millis();
-
+    
 
     // =================================================
     // READ SENSORS EVERY 2 SECONDS
@@ -460,7 +460,7 @@ void loop()
 
                 Serial.println();
                 Serial.print("Moisture after soaking: ");
-                Serial.print(soilMoisture);
+                Serial.print(rawSoilMoisture);
                 Serial.println("%");
 
 
